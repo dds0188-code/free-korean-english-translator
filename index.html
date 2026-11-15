@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#10131b"><title>한영 번역기</title>
+<meta name="theme-color" content="#fff0f6"><title>한영 번역기</title>
 <style>
 :root{color-scheme:dark;--bg:#0d1017;--panel:#171c27;--line:#2a3242;--muted:#929caf;--text:#f4f6fb;--accent:#8b9cff}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -20%,#27304b 0,transparent 55%),var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,sans-serif;min-height:100vh;padding:32px 16px}
@@ -11,6 +11,26 @@ h1{font-size:clamp(28px,5vw,42px);letter-spacing:-1.5px;margin:0 0 8px}.sub{colo
 .toolbar{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:14px}.lang{background:var(--panel);border:1px solid var(--line);color:var(--text);border-radius:12px;padding:12px 18px;font-weight:650;min-width:125px}.swap{border:1px solid var(--line);background:#222a3a;color:var(--accent);border-radius:50%;width:42px;height:42px;font-size:20px;cursor:pointer}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.pane{background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden;min-height:300px}.panehead{padding:16px 18px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;color:var(--muted);font-size:13px}.pane textarea{width:100%;height:220px;resize:vertical;background:transparent;border:0;outline:0;color:var(--text);padding:18px;font:18px/1.6 inherit}.pane textarea::placeholder{color:#657086}.foot{display:flex;justify-content:space-between;padding:0 18px 14px;color:var(--muted);font-size:12px}.actions{display:flex;gap:10px;align-items:center;margin:16px 0 26px}.primary,.secondary{border:0;border-radius:12px;padding:13px 20px;font-weight:700;cursor:pointer}.primary{background:var(--accent);color:#10131b;flex:1}.secondary{background:#242c3b;color:var(--text);border:1px solid var(--line)}button:disabled{opacity:.55;cursor:wait}.note{color:var(--muted);font-size:12px;text-align:center}.history{margin-top:28px}.history h2{font-size:15px}.item{padding:12px 14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;margin:8px 0;cursor:pointer;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#cbd2df}.error{color:#ff9c9c;font-size:13px;min-height:20px}
 @media(max-width:650px){body{padding:22px 12px}.grid{grid-template-columns:1fr}.pane{min-height:230px}.pane textarea{height:155px}.toolbar{gap:7px}.lang{min-width:0;flex:1;padding:11px 8px}.swap{flex:none}.actions{flex-wrap:wrap}.primary{flex-basis:100%}}
+
+/* Pink refresh */
+:root{color-scheme:light;--bg:#fff0f6;--panel:#fffafd;--line:#f5c8dc;--muted:#a45f7e;--text:#51243a;--accent:#ff4f9a}
+body{background:radial-gradient(ellipse at 50% -20%,#ffc1dc 0,transparent 58%),linear-gradient(135deg,#fff0f6 0%,#ffe3ef 48%,#fff5fa 100%);color:var(--text)}
+.brand{color:#e83283}
+.tag{color:#b45d83}
+.sub{color:#a45f7e}
+.lang{background:#fffafd;border-color:#f2bfd6;color:#71334f;box-shadow:0 3px 12px #d94f8b12}
+.swap{background:#ffe0ee;border-color:#f4b5d1;color:#e83283}
+.pane{background:rgba(255,250,253,.94);border-color:#f3c3d9;box-shadow:0 10px 30px #b93d7510}
+.panehead{border-color:#f5d4e3;color:#a45f7e}
+.pane textarea{color:#51243a}
+.pane textarea::placeholder{color:#c18aa4}
+.primary{background:linear-gradient(135deg,#ff5ba4,#f02e87);color:white;box-shadow:0 7px 18px #ed3d8b38}
+.secondary{background:#ffe5f0;color:#a52d68;border-color:#f3bfd5}
+.item{background:#fffafd;border-color:#f3c3d9;color:#71334f}
+.error{color:#d52f70}
+.note{color:#a45f7e}
+.history h2{color:#71334f}
+
 </style></head>
 <body><main>
 <div class="top"><div class="brand">◈ WORDWAVE</div><div class="tag">FREE KOREAN ↔ ENGLISH</div></div>
